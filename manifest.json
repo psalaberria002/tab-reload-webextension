@@ -1,0 +1,28 @@
+{
+
+    "manifest_version": 2,
+    "name": "Tab Reload",
+    "version": "1.0",
+
+    "description": "The best tab reloader in the market. It allows you to set the URL for each tab, as well as a refresh period.",
+
+    "icons": {
+        "48": "icons/tab-reload.png"
+    },
+    "browser_action": {
+        "default_icon": "icons/tab-reload.png"
+    },
+    "permissions": [
+        "tabs",
+        "storage"
+    ],
+
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "options_ui": {
+        "page": "options.html",
+        "chrome_style": true
+    }
+
+}
